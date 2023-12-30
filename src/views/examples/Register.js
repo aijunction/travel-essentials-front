@@ -37,22 +37,43 @@ import {
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
-import { auth } from "../../firebase";
-import firebase from "firebase/compat/app";
+import { app } from "../../firebase";
 
-export default function Login() {
+import { collection, getFirestore, addDoc } from "firebase/firestore";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  updateProfile,
+} from "firebase/auth";
+
+export default function Register() {
+  const auth = getAuth();
   const [passwordValue, setPasswordValue] = useState("");
   const [emailValue, setEmailValue] = useState("");
-  const handleRegistration = async (email, password) => {
+  const [userName, setUserName] = useState("");
+  const db = getFirestore(app);
+  const usersCollection = collection(db, "users");
+  const handleRegistration = async (email, password, name) => {
     try {
       // Create a new user with email and password
-      const userCredential = await firebase
-        .auth()
-        .createUserWithEmailAndPassword(email, password);
+      console.log(name);
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password,
+        {
+          displayName: name, // Pass the display name here
+        }
+      );
 
       // Access the newly created user from the userCredential
       const user = userCredential.user;
-
+      // Set the display name for the user
+      await updateProfile(user, { displayName: name });
+      await addDoc(usersCollection, {
+        name: name,
+        email: email,
+      });
       console.log("User registered successfully!", user);
 
       // Perform any additional tasks after successful registration here
@@ -133,7 +154,14 @@ export default function Login() {
                               <i className="ni ni-hat-3" />
                             </InputGroupText>
                           </InputGroupAddon>
-                          <Input placeholder="Name" type="text" />
+                          <Input
+                            placeholder="Name"
+                            type="text"
+                            value={userName}
+                            onChange={(event) =>
+                              setUserName(event.target.value)
+                            }
+                          />
                         </InputGroup>
                       </FormGroup>
                       <FormGroup>
@@ -210,7 +238,11 @@ export default function Login() {
                           color="primary"
                           type="button"
                           onClick={() =>
-                            handleRegistration(emailValue, passwordValue)
+                            handleRegistration(
+                              emailValue,
+                              passwordValue,
+                              userName
+                            )
                           }
                         >
                           Create account

@@ -38,16 +38,16 @@ import {
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 import axios from "axios";
-import { auth } from "../../firebase";
-import firebase from "firebase/compat/app";
+
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 export default function Login() {
+  const auth = getAuth();
   const [passwordValue, setPasswordValue] = useState("");
   const [emailValue, setEmailValue] = useState("");
   const handleLogin = async (email, password) => {
     try {
-      const provider = new firebase.auth()
-        .signInWithEmailAndPassword(email, password)
+      const provider = signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           console.log("User signed in successfully!", userCredential.user);
           // Handle successful sign-in
