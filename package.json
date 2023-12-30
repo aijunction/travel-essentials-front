@@ -3,10 +3,6 @@
   "version": "1.1.2",
   "description": "React version of Argon Design System by Creative Tim",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/creativetimofficial/argon-design-system-react.git"
-  },
   "keywords": [
     "react",
     "reactjs",
@@ -47,8 +43,10 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "axios": "^1.6.3",
     "bootstrap": "4.6.2",
     "classnames": "2.3.2",
+    "firebase": "^10.7.1",
     "headroom.js": "0.12.0",
     "moment": "2.29.4",
     "nouislider": "15.4.0",
