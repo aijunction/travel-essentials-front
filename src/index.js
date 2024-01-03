@@ -28,6 +28,7 @@ import Landing from "views/examples/Landing.js";
 import Login from "views/examples/Login.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
+import Products from "views/examples/Products.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -36,6 +37,7 @@ root.render(
     <Routes>
       <Route path="/" exact element={<Index />} />
       <Route path="/landing-page" exact element={<Landing />} />
+      <Route path="/products-page" exact element={<Products />} />
       <Route path="/login-page" exact element={<Login />} />
       <Route path="/profile-page" exact element={<Profile />} />
       <Route path="/register-page" exact element={<Register />} />
