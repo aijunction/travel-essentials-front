@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 // reactstrap components
 import { Button, Card, Container, Row, Col } from "reactstrap";
@@ -23,12 +23,57 @@ import { Button, Card, Container, Row, Col } from "reactstrap";
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
-import { getAuth } from "firebase/auth";
+
+import {
+  collection,
+  doc,
+  getDocs,
+  getFirestore,
+  query,
+} from "firebase/firestore";
+import { app } from "firebase.js";
+import { auth } from "firebase.js";
+import { database } from "firebase.js";
 
 export default function Profile() {
-  const auth = getAuth();
-  const user = auth.currentUser;
-  console.log(user);
+  const currentUser = auth.currentUser;
+
+  console.log(currentUser);
+  const [favorites, setFavorites] = useState([]);
+
+  useEffect(() => {
+    const fetchFavorites = async () => {
+      if (currentUser) {
+        const db = getFirestore();
+        const favoritesCollectionRef = collection(
+          db,
+          "users",
+          currentUser.uid,
+          "favorites"
+        );
+        const favoritesQuery = query(favoritesCollectionRef);
+
+        try {
+          const favoritesSnapshot = await getDocs(favoritesQuery);
+
+          if (!favoritesSnapshot.empty) {
+            const favoritesData = favoritesSnapshot.docs.map((doc) => ({
+              id: doc.id,
+              ...doc.data(),
+            }));
+            setFavorites(favoritesData);
+          } else {
+            console.log("No favorites found");
+          }
+        } catch (error) {
+          console.error("Error fetching favorites:", error);
+        }
+      }
+    };
+
+    fetchFavorites();
+  }, [currentUser]);
+  console.log(favorites);
   return (
     <>
       <DemoNavbar />
@@ -118,9 +163,9 @@ export default function Profile() {
                   </Col>
                 </Row>
                 <div className="text-center mt-5">
-                  {user && (
+                  {currentUser && (
                     <h3>
-                      {user.displayName}
+                      {currentUser.displayName}
                       <span className="font-weight-light">, 27</span>
                     </h3>
                   )}
@@ -147,6 +192,16 @@ export default function Profile() {
                         giving it a warm, intimate feel with a solid groove
                         structure. An artist of considerable range.
                       </p>
+                      <h3>Favorites:</h3>
+                      <ul>
+                        {favorites.map((favorite) => (
+                          <li key={favorite.id}>
+                            {/* Display favorite data as needed */}
+
+                            {favorite.id}
+                          </li>
+                        ))}
+                      </ul>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
                         Show more
                       </a>

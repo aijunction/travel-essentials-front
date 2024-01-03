@@ -18,7 +18,7 @@
 import React, { useState } from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
-import { useHistory } from "react-router-dom";
+import { useHistory, useNavigate } from "react-router-dom";
 // reactstrap components
 import {
   Badge,
@@ -44,32 +44,46 @@ import CardsFooter from "components/Footers/CardsFooter.js";
 import Download from "../IndexSections/Download.js";
 import { getAuth } from "firebase/auth";
 import { app } from "firebase.js";
+import {
+  getFirestore,
+  collection,
+  doc,
+  setDoc,
+  serverTimestamp,
+} from "firebase/firestore";
+import { auth } from "firebase.js";
+import { database } from "firebase.js";
 const Item = ({ productId, title }) => {
   const [isFavorite, setFavorite] = useState(false);
-  const auth = getAuth();
-  const history = useHistory();
+
+  const navigate = useNavigate();
+
   const handleFavoriteClick = async () => {
     // Toggle the favorite status when the heart icon is clicked
     setFavorite((prevFavorite) => !prevFavorite);
 
     // Get the current user
     const user = auth.currentUser;
+    console.log(user);
+
     // Update Firestore with the new favorite status
     if (user) {
       const userId = user.uid;
-      const favoritesRef = app
-        .firestore()
-        .collection("users")
-        .doc(userId)
-        .collection("favorites");
-
+      const userDocRef = doc(collection(database, "users"), userId);
+      const favoritesRef = collection(userDocRef, "favorites");
+      const docRef = doc(favoritesRef, productId);
       if (isFavorite) {
-        await favoritesRef.doc(productId).delete();
+        await setDoc(docRef, {
+          /* data */
+        });
       } else {
-        await favoritesRef
-          .doc(productId)
-          .set({ timestamp: app.firestore.FieldValue.serverTimestamp() });
+        await setDoc(docRef, {
+          timestamp: serverTimestamp(),
+        });
       }
+
+      // Redirect to the user's profile page after updating favorites
+      navigate("/profile-page"); // Replace with your actual profile page path
     }
   };
   return (
@@ -90,7 +104,7 @@ const Item = ({ productId, title }) => {
               />
               {/* </button> */}
             </div>
-            <h6 className="text-primary text-uppercase">Download Argon</h6>
+            <h6 className="text-primary text-uppercase">{title}</h6>
             <p className="description mt-3">
               Argon is a great free UI package based on Bootstrap 4 that
               includes the most important components and features.

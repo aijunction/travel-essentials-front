@@ -42,6 +42,7 @@ import CardsFooter from "components/Footers/CardsFooter.js";
 
 // index page sections
 import Download from "../IndexSections/Download.js";
+import Item from "./item.js";
 
 export default function Products() {
   const [isFavorite, setFavorite] = useState(false);
@@ -134,6 +135,7 @@ export default function Products() {
             <Row className="justify-content-center">
               <Col lg="12">
                 <Row className="row-grid">
+                  <Item title={"Test Product"} productId={"1234"} />
                   <Col lg="4">
                     <Card className="card-lift--hover shadow border-0">
                       <CardBody className="py-5">
