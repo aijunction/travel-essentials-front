@@ -213,7 +213,9 @@ export default function Profile() {
                             {/* Display favorite data as needed */}
 
                             {favorite.id}
-                            <Button onClick={deleteFavorite}>Remove</Button>
+                            <Button onClick={() => deleteFavorite(favorite.id)}>
+                              Remove
+                            </Button>
                           </li>
                         ))}
                       </ul>
