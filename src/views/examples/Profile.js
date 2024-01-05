@@ -24,14 +24,7 @@ import { Button, Card, Container, Row, Col } from "reactstrap";
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 
-import {
-  collection,
-  doc,
-  getDocs,
-  getFirestore,
-  query,
-} from "firebase/firestore";
-import { app } from "firebase.js";
+import { collection, deleteDoc, doc, getDocs, query } from "firebase/firestore";
 import { auth } from "firebase.js";
 import { database } from "firebase.js";
 
@@ -41,12 +34,33 @@ export default function Profile() {
   console.log(currentUser);
   const [favorites, setFavorites] = useState([]);
 
+  const deleteFavorite = async (favoriteId) => {
+    try {
+      const favoriteDocRef = doc(
+        database,
+        "users",
+        currentUser.uid,
+        "favorites",
+        favoriteId
+      );
+
+      // Delete the favorite document
+      await deleteDoc(favoriteDocRef);
+
+      // Update the state to reflect the removal
+      setFavorites((prevFavorites) =>
+        prevFavorites.filter((fav) => fav.id !== favoriteId)
+      );
+    } catch (error) {
+      console.error("Error deleting favorite:", error);
+    }
+  };
+
   useEffect(() => {
     const fetchFavorites = async () => {
       if (currentUser) {
-        const db = getFirestore();
         const favoritesCollectionRef = collection(
-          db,
+          database,
           "users",
           currentUser.uid,
           "favorites"
@@ -199,6 +213,7 @@ export default function Profile() {
                             {/* Display favorite data as needed */}
 
                             {favorite.id}
+                            <Button onClick={deleteFavorite}>Remove</Button>
                           </li>
                         ))}
                       </ul>
