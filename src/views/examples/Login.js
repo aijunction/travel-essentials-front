@@ -41,16 +41,19 @@ import axios from "axios";
 
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "firebase.js";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [passwordValue, setPasswordValue] = useState("");
   const [emailValue, setEmailValue] = useState("");
+  const navigate = useNavigate();
   const handleLogin = async (email, password) => {
     try {
       const provider = signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           console.log("User signed in successfully!", userCredential.user);
           // Handle successful sign-in
+          navigate("/admin/dashboard");
         })
         .catch((error) => {
           console.error("Sign in failed:", error);
