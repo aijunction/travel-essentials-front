@@ -49,14 +49,14 @@ var routes = [
   },
   {
     path: "/tables",
-    name: "Tables",
+    name: "Favorites",
     icon: "ni ni-bullet-list-67 text-red",
     component: <Tables />,
     layout: "/admin",
   },
   {
     path: "/login-page",
-    name: "Login",
+    name: "Reccommendations",
     icon: "ni ni-key-25 text-info",
     component: <Login />,
     layout: "",

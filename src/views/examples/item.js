@@ -20,30 +20,9 @@ import React, { useState } from "react";
 import classnames from "classnames";
 import { useHistory, useNavigate } from "react-router-dom";
 // reactstrap components
-import {
-  Badge,
-  Button,
-  Card,
-  CardBody,
-  CardImg,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
+import { Badge, Button, Card, CardBody, Col } from "reactstrap";
 
-// core components
-import DemoNavbar from "components/Navbars/DemoNavbar.js";
-import CardsFooter from "components/Footers/CardsFooter.js";
-
-// index page sections
-import Download from "../IndexSections/Download.js";
-import { getAuth } from "firebase/auth";
-import { app } from "firebase.js";
+import "/Users/yvetteagyei/Documents/GitHub/travel-essentials-front/src/assets/css/travelEssentials.css";
 import {
   getFirestore,
   collection,
@@ -104,6 +83,11 @@ const Item = ({ productId, title }) => {
               />
               {/* </button> */}
             </div>
+            <img
+              src={require("/Users/yvetteagyei/Documents/GitHub/travel-essentials-front/src/assets/img/productImages/travelPillow.jpg")}
+              alt="blue travel neck pillow"
+              className="product-img"
+            />
             <h6 className="text-primary text-uppercase">{title}</h6>
             <p className="description mt-3">
               Argon is a great free UI package based on Bootstrap 4 that

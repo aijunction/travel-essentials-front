@@ -29,7 +29,7 @@ import Landing from "views/examples/Landing.js";
 import Login from "views/examples/Login.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
-import Products from "views/examples/Products.js";
+import Products from "views/popular/Products.js";
 import AuthLayout from "layouts/Auth.js";
 import AdminLayout from "layouts/Admin.js";
 

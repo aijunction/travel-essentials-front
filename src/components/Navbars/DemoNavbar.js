@@ -110,7 +110,7 @@ class DemoNavbar extends React.Component {
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-ui-04 d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Components</span>
+                      <span className="nav-link-inner--text">Categories</span>
                     </DropdownToggle>
                     <DropdownMenu className="dropdown-menu-xl">
                       <div className="dropdown-menu-inner">
@@ -124,12 +124,8 @@ class DemoNavbar extends React.Component {
                           </div>
                           <Media body className="ml-3">
                             <h6 className="heading text-primary mb-md-1">
-                              Getting started
+                              Luggage
                             </h6>
-                            <p className="description d-none d-md-inline-block mb-0">
-                              Learn how to use Argon compiling Scss, change
-                              brand colors and more.
-                            </p>
                           </Media>
                         </Media>
                         <Media
@@ -142,12 +138,8 @@ class DemoNavbar extends React.Component {
                           </div>
                           <Media body className="ml-3">
                             <h6 className="heading text-primary mb-md-1">
-                              Foundation
+                              Electronics
                             </h6>
-                            <p className="description d-none d-md-inline-block mb-0">
-                              Learn more about colors, typography, icons and the
-                              grid system we used for Argon.
-                            </p>
                           </Media>
                         </Media>
                         <Media
@@ -160,12 +152,36 @@ class DemoNavbar extends React.Component {
                           </div>
                           <Media body className="ml-3">
                             <h5 className="heading text-warning mb-md-1">
-                              Components
+                              Accessories
                             </h5>
-                            <p className="description d-none d-md-inline-block mb-0">
-                              Browse our 50 beautiful handcrafted components
-                              offered in the Free version.
-                            </p>
+                          </Media>
+                        </Media>
+                        <Media
+                          className="d-flex align-items-center"
+                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alert?ref=adsr-navbar"
+                          target="_blank"
+                        >
+                          <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
+                            <i className="ni ni-ui-04" />
+                          </div>
+                          <Media body className="ml-3">
+                            <h5 className="heading text-warning mb-md-1">
+                              Health and Safety
+                            </h5>
+                          </Media>
+                        </Media>
+                        <Media
+                          className="d-flex align-items-center"
+                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alert?ref=adsr-navbar"
+                          target="_blank"
+                        >
+                          <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
+                            <i className="ni ni-ui-04" />
+                          </div>
+                          <Media body className="ml-3">
+                            <h5 className="heading text-warning mb-md-1">
+                              Clothing and Apparel
+                            </h5>
                           </Media>
                         </Media>
                       </div>
@@ -174,104 +190,83 @@ class DemoNavbar extends React.Component {
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Examples</span>
+                      <span className="nav-link-inner--text">Checklists</span>
                     </DropdownToggle>
                     <DropdownMenu>
                       <DropdownItem to="/landing-page" tag={Link}>
-                        Landing
+                        Weekend Getaway Checklist
                       </DropdownItem>
                       <DropdownItem to="/profile-page" tag={Link}>
-                        Profile
+                        Business Trip Checklist
                       </DropdownItem>
                       <DropdownItem to="/login-page" tag={Link}>
-                        Login
+                        Adventure Travel Checklist
                       </DropdownItem>
                       <DropdownItem to="/register-page" tag={Link}>
-                        Register
+                        International Travel Checklist
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
+                      <i className="ni ni-collection d-lg-none mr-1" />
+                      <span className="nav-link-inner--text">Traveler</span>
+                    </DropdownToggle>
+                    <DropdownMenu>
+                      <DropdownItem to="/landing-page" tag={Link}>
+                        Travel Essentials for Women
+                      </DropdownItem>
+                      <DropdownItem to="/profile-page" tag={Link}>
+                        Travel Essentials for Men
+                      </DropdownItem>
+                      <DropdownItem to="/login-page" tag={Link}>
+                        Travel Essentials for Baby
+                      </DropdownItem>
+                      <DropdownItem to="/register-page" tag={Link}>
+                        Travel Essentials for Toddler
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+                  <NavItem>
+                    <NavLink
+                      to="/products-page"
+                      tag={Link}
+                      className="nav-link-icon"
+                      href="https://www.instagram.com/creativetimofficial"
+                      target="_blank"
+                    >
+                      <span className="nav-link-inner--text">Popular</span>
+                    </NavLink>
+                  </NavItem>
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
                   <NavItem>
                     <NavLink
-                      className="nav-link-icon"
-                      href="https://www.facebook.com/creativetim"
-                      id="tooltip333589074"
-                      target="_blank"
-                    >
-                      <i className="fa fa-facebook-square" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">
-                        Facebook
-                      </span>
-                    </NavLink>
-                    <UncontrolledTooltip delay={0} target="tooltip333589074">
-                      Like us on Facebook
-                    </UncontrolledTooltip>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink
+                      to="/login-page"
+                      tag={Link}
                       className="nav-link-icon"
                       href="https://www.instagram.com/creativetimofficial"
-                      id="tooltip356693867"
                       target="_blank"
                     >
-                      <i className="fa fa-instagram" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">
-                        Instagram
-                      </span>
+                      <span className="nav-link-inner--text">Login</span>
                     </NavLink>
-                    <UncontrolledTooltip delay={0} target="tooltip356693867">
-                      Follow us on Instagram
-                    </UncontrolledTooltip>
                   </NavItem>
-                  <NavItem>
-                    <NavLink
-                      className="nav-link-icon"
-                      href="https://twitter.com/creativetim"
-                      id="tooltip184698705"
-                      target="_blank"
-                    >
-                      <i className="fa fa-twitter-square" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">
-                        Twitter
-                      </span>
-                    </NavLink>
-                    <UncontrolledTooltip delay={0} target="tooltip184698705">
-                      Follow us on Twitter
-                    </UncontrolledTooltip>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink
-                      className="nav-link-icon"
-                      href="https://github.com/creativetimofficial/argon-design-system-react"
-                      id="tooltip112445449"
-                      target="_blank"
-                    >
-                      <i className="fa fa-github" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">
-                        Github
-                      </span>
-                    </NavLink>
-                    <UncontrolledTooltip delay={0} target="tooltip112445449">
-                      Star us on Github
-                    </UncontrolledTooltip>
-                  </NavItem>
+
                   <NavItem className="d-none d-lg-block ml-lg-4">
                     <Button
                       className="btn-neutral btn-icon"
                       color="default"
-                      href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-navbar"
+                      to="/register-page"
+                      tag={Link}
                       target="_blank"
                     >
                       <span className="btn-inner--icon">
-                        <i className="fa fa-cloud-download mr-2" />
+                        <i className="fa fa-plane mr-2" />
                       </span>
-                      <span className="nav-link-inner--text ml-1">
-                        Download
-                      </span>
+                      <span className="nav-link-inner--text ml-1">Go Pro</span>
                     </Button>
                   </NavItem>
+                  <NavItem></NavItem>
                 </Nav>
               </UncontrolledCollapse>
             </Container>
