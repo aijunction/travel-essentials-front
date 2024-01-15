@@ -32,11 +32,13 @@ import {
 } from "firebase/firestore";
 import { auth } from "firebase.js";
 import { database } from "firebase.js";
-const Item = ({ productId, title }) => {
+const Item = ({ productId, title, image, description, tags, url }) => {
   const [isFavorite, setFavorite] = useState(false);
 
   const navigate = useNavigate();
-
+  const tagsArr = tags?.split(",");
+  const dynamicImage = require(`../../assets/img/productImages/${image}`);
+  console.log(image);
   const handleFavoriteClick = async () => {
     // Toggle the favorite status when the heart icon is clicked
     setFavorite((prevFavorite) => !prevFavorite);
@@ -67,48 +69,46 @@ const Item = ({ productId, title }) => {
   };
   return (
     <>
-      <Col lg="4">
+      <Col lg="4" className="item-col">
         <Card className="card-lift--hover shadow border-0">
-          <CardBody className="py-5">
-            <div
-              className="icon icon-shape icon-shape-primary rounded-circle mb-4"
-              onClick={handleFavoriteClick}
-            >
-              <i
-                className="ni ni-favourite-28"
-                style={{
-                  cursor: "pointer",
-                  color: isFavorite ? "red" : "gray",
-                }}
-              />
-              {/* </button> */}
+          <CardBody className="item-body">
+            <div className="icon-right">
+              <div
+                className="icon icon-shape fav-icon-shape icon-shape-primary rounded-circle mb-4"
+                onClick={handleFavoriteClick}
+              >
+                <i
+                  className="ni ni-favourite-28"
+                  style={{
+                    cursor: "pointer",
+                    color: isFavorite ? "red" : "gray",
+                  }}
+                />
+                {/* </button> */}
+              </div>
             </div>
             <img
-              src={require("/Users/yvetteagyei/Documents/GitHub/travel-essentials-front/src/assets/img/productImages/travelPillow.jpg")}
+              src={dynamicImage}
               alt="blue travel neck pillow"
               className="product-img"
             />
             <h6 className="text-primary text-uppercase">{title}</h6>
-            <p className="description mt-3">
-              Argon is a great free UI package based on Bootstrap 4 that
-              includes the most important components and features.
-            </p>
+            <p className="description mt-3">{description}</p>
             <div>
-              <Badge color="primary" pill className="mr-1">
-                design
-              </Badge>
-              <Badge color="primary" pill className="mr-1">
-                system
-              </Badge>
-              <Badge color="primary" pill className="mr-1">
-                creative
-              </Badge>
+              {tagsArr.map((tag, i) => (
+                <Badge color="primary" pill className="mr-1" key={i}>
+                  {tag}
+                </Badge>
+              ))}
             </div>
             <Button
               className="mt-4"
               color="primary"
-              href="#pablo"
-              onClick={(e) => e.preventDefault()}
+              href={url}
+              onClick={(e) => {
+                e.preventDefault();
+                window.open(`${url}`, "_blank");
+              }}
             >
               Learn more
             </Button>

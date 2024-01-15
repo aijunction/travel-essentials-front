@@ -17,7 +17,6 @@
 */
 
 import Profile from "views/examples/Profile.js";
-import Maps from "views/examples/Maps.js";
 import Register from "views/examples/Register.js";
 import Login from "views/examples/Login.js";
 import Tables from "views/examples/Tables.js";
@@ -43,28 +42,28 @@ var routes = [
   {
     path: "/user-profile",
     name: "User Profile",
-    icon: "ni ni-single-02 text-yellow",
+    icon: "ni ni-single-02 text-pink",
     component: <Profile />,
     layout: "/admin",
   },
   {
     path: "/tables",
     name: "Favorites",
-    icon: "ni ni-bullet-list-67 text-red",
+    icon: "ni ni-favourite-28 text-red",
     component: <Tables />,
     layout: "/admin",
   },
   {
-    path: "/login-page",
-    name: "Reccommendations",
-    icon: "ni ni-key-25 text-info",
-    component: <Login />,
-    layout: "",
+    path: "/recommendations",
+    name: "Recommendations",
+    icon: "ni ni-bulb-61 text-yellow",
+    component: <Tables />,
+    layout: "/admin",
   },
   {
     path: "/register",
-    name: "Register",
-    icon: "ni ni-circle-08 text-pink",
+    name: "Checklists",
+    icon: "ni ni-bullet-list-67 text-blue",
     component: <Register />,
     layout: "",
   },

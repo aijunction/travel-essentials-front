@@ -139,9 +139,8 @@ class CardsFooter extends React.Component {
                     href="https://www.creative-tim.com?ref=adsr-footer"
                     target="_blank"
                   >
-                    Creative Tim
+                    Travel Essentials
                   </a>
-                  .
                 </div>
               </Col>
               <Col md="6">
@@ -167,7 +166,7 @@ class CardsFooter extends React.Component {
                       href="http://blog.creative-tim.com?ref=adsr-footer"
                       target="_blank"
                     >
-                      Blog
+                      Privacy Policy
                     </NavLink>
                   </NavItem>
                   <NavItem>

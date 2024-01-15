@@ -90,8 +90,6 @@ export default function Profile() {
   console.log(favorites);
   return (
     <>
-      <DemoNavbar />
-
       <main className="profile-page">
         <section className="section-profile-cover section-shaped my-0">
           {/* Circles background */}

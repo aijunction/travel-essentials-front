@@ -231,11 +231,12 @@ class DemoNavbar extends React.Component {
                     <NavLink
                       to="/products-page"
                       tag={Link}
-                      className="nav-link-icon"
                       href="https://www.instagram.com/creativetimofficial"
                       target="_blank"
                     >
-                      <span className="nav-link-inner--text">Popular</span>
+                      <span className="nav-link-inner--text dash-nav-link">
+                        Popular
+                      </span>
                     </NavLink>
                   </NavItem>
                 </Nav>
