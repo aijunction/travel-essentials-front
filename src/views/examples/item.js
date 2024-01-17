@@ -17,19 +17,13 @@
 */
 import React, { useState } from "react";
 // nodejs library that concatenates classes
-import classnames from "classnames";
-import { useHistory, useNavigate } from "react-router-dom";
+
+import { useNavigate } from "react-router-dom";
 // reactstrap components
 import { Badge, Button, Card, CardBody, Col } from "reactstrap";
 
-import "/Users/yvetteagyei/Documents/GitHub/travel-essentials-front/src/assets/css/travelEssentials.css";
-import {
-  getFirestore,
-  collection,
-  doc,
-  setDoc,
-  serverTimestamp,
-} from "firebase/firestore";
+import "../../assets/css/travelEssentials.css";
+import { collection, doc, setDoc, serverTimestamp } from "firebase/firestore";
 import { auth } from "firebase.js";
 import { database } from "firebase.js";
 const Item = ({ productId, title, image, description, tags, url }) => {
