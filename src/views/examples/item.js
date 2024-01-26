@@ -64,7 +64,7 @@ const Item = ({ productId, title, image, description, tags, url }) => {
   return (
     <>
       <Col lg="4" className="item-col">
-        <Card className="card-lift--hover shadow border-0">
+        <Card className="card-lift--hover shadow border-0 card-height">
           <CardBody className="item-body">
             <div className="icon-right">
               <div
@@ -104,7 +104,7 @@ const Item = ({ productId, title, image, description, tags, url }) => {
                 window.open(`${url}`, "_blank");
               }}
             >
-              Learn more
+              Buy on Amazon
             </Button>
           </CardBody>
         </Card>

@@ -1,34 +1,194 @@
 [
   {
     "Title": "Neck Pillow",
-    "Description": "Enhance travel comfort with MLVOC's Memory Foam Pillow—perfect neck support, adjustable, sweat-resistant, and compact for on-the-go ease.",
-    "Tags": "Comfort,Airplane,Nice,follow",
-    "Categories": "category1,category2",
+    "Description": "Pillow provides neck support and is easy to pack",
+    "Tags": "Comfort,Airplane,Sleep",
+    "Categories": "Popular,Women, Men",
     "img": "travelPillow.jpg",
     "url": "https://www.amazon.com/MLVOC-Comfortable-Breathable-Washable-Contoured/dp/B082K8ZNQ1/ref=sr_1_1_sspa?crid=1OM1Z3WC7A607&keywords=neck%2Bpillow%2Bfor%2Bsleeping%2Btravel&qid=1705270437&sprefix=neck%2Bpillow%2B%2Caps%2C119&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
   },
   {
-    "Title": "Neck Pillow",
-    "Description": "Enhance travel comfort with MLVOC's Memory Foam Pillow—perfect neck support, adjustable, sweat-resistant, and compact for on-the-go ease.",
-    "Tags": "Comfort,Airplane,Nice,follow",
-    "Categories": "category1,category2",
-    "img": "travelPillow.jpg",
-    "url": "https://www.amazon.com/MLVOC-Comfortable-Breathable-Washable-Contoured/dp/B082K8ZNQ1/ref=sr_1_1_sspa?crid=1OM1Z3WC7A607&keywords=neck%2Bpillow%2Bfor%2Bsleeping%2Btravel&qid=1705270437&sprefix=neck%2Bpillow%2B%2Caps%2C119&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+    "Title": "Collapsible Tote Bag",
+    "Description": "Standard Reusable Shopping Bag that folds into a compact pouch",
+    "Tags": "Convenience,airplance,accessories",
+    "Categories": "Women, Shopping",
+    "img": "collapsibletote.jpg",
+    "url": "https://amzn.to/3OcFL0Q"
   },
   {
-    "Title": "Neck Pillow",
-    "Description": "Enhance travel comfort with MLVOC's Memory Foam Pillow—perfect neck support, adjustable, sweat-resistant, and compact for on-the-go ease.",
-    "Tags": "Comfort,Airplane,Nice,follow",
-    "Categories": "category1,category2",
-    "img": "travelPillow.jpg",
-    "url": "https://www.amazon.com/MLVOC-Comfortable-Breathable-Washable-Contoured/dp/B082K8ZNQ1/ref=sr_1_1_sspa?crid=1OM1Z3WC7A607&keywords=neck%2Bpillow%2Bfor%2Bsleeping%2Btravel&qid=1705270437&sprefix=neck%2Bpillow%2B%2Caps%2C119&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+    "Title": "Infinitiy Scarf",
+    "Description": "Infinity Scarf with a hidden zipper pocket for storing valuables.",
+    "Tags": "Scarf, Hidden Pocket,Clothes, Valuables Storage",
+    "Categories": "Women, Fashion",
+    "img": "infinityScarf.jpg",
+    "url": "https://amzn.to/3UdASJ0"
   },
   {
-    "Title": "Neck Pillow",
-    "Description": "Enhance travel comfort with MLVOC's Memory Foam Pillow—perfect neck support, adjustable, sweat-resistant, and compact for on-the-go ease.",
-    "Tags": "Comfort,Airplane,Nice,follow",
-    "Categories": "category1,category2",
-    "img": "travelPillow.jpg",
-    "url": "https://www.amazon.com/MLVOC-Comfortable-Breathable-Washable-Contoured/dp/B082K8ZNQ1/ref=sr_1_1_sspa?crid=1OM1Z3WC7A607&keywords=neck%2Bpillow%2Bfor%2Bsleeping%2Btravel&qid=1705270437&sprefix=neck%2Bpillow%2B%2Caps%2C119&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+    "Title": "Solar Power Charger Bank",
+    "Description": "Catch rays to charge your phone",
+    "Tags": "Power Bank,Electronics,Solar Poer",
+    "Categories": "Women, Electronics",
+    "img": "solarCharger.jpg",
+    "url": "https://amzn.to/3SuSQVY"
+  },
+  {
+    "Title": "Collapsible Water Bottle",
+    "Description": "Water Bottle that can be collapsed and easily stored up when not in use",
+    "Tags": "Water Bottle, Collapsible, Travel Hydration",
+    "Categories": "Women, Water Bottle",
+    "img": "collapsibleBottle.jpg",
+    "url": "https://amzn.to/3Sw1sMe"
+  },
+  {
+    "Title": "Portable Scale",
+    "Description": "Never overpay for luggage fees again!",
+    "Tags": "Electronics, Scale",
+    "Categories": "Popular",
+    "img": "portableScale.jpg",
+    "url": "https://amzn.to/3Ol08Jr"
+  },
+  {
+    "Title": "Mircrofiber Towel",
+    "Description": "The softest and easiest to pack towel on the market",
+    "Tags": "Towels, Beauty",
+    "Categories": "Popular, Women",
+    "img": "microFiberTowel.jpg",
+    "url": "https://amzn.to/3OfiNX2"
+  },
+  {
+    "Title": "Scrubba Washbag",
+    "Description": "Light and Small Eco-friendly Camping Laundry Bag for Washing Clothes Anywhere",
+    "Tags": "Laundry,Convenience",
+    "Categories": "Popular",
+    "img": "scrubbaWashbag.jpg",
+    "url": "https://amzn.to/3vJyuiM"
+  },
+  {
+    "Title": "Portable Massage Gun",
+    "Description": "For those aches and pains after long haul flights",
+    "Tags": "Athletes, Fitness, Relaxation",
+    "Categories": "Popular, Fitness",
+    "img": "portableMassageGun.jpg",
+    "url": "https://amzn.to/47TgBvc"
+  },
+  {
+    "Title": "International Adapter",
+    "Description": "Universal All in One Worldwide Travel Adapter Power with Dual USB Charging Ports for USA EU UK AUS",
+    "Tags": "Electronics, Adapter",
+    "Categories": "Popular, Europe, Australia, USA",
+    "img": "internationalAdapter.jpg",
+    "url": "https://amzn.to/3SyYVjd"
+  },
+  {
+    "Title": "Travel Friendly Yoga Mat",
+    "Description": "Anti-Slip Folding Exercise Mat for Yoga, Pilates, Home Workouts, and Floor Exercises",
+    "Tags": "Yoga, Fitness",
+    "Categories": "Women, Men, Fitness, Athletes",
+    "img": "yogaMat.jpg",
+    "url": "https://amzn.to/48Q0yQa"
+  },
+  {
+    "Title": "Packing Cubes",
+    "Description": "5 Set Packing Cubes - Travel Organizers with Laundry Bag",
+    "Tags": "Packing Cubes, Laundry, Organization",
+    "Categories": "Women, Men, Organization, Popular",
+    "img": "packingCubes.jpg",
+    "url": "https://amzn.to/47Sxd6z"
+  },
+  {
+    "Title": "Toiletry Bag",
+    "Description": "Hanging Travel Bag for Toiletries",
+    "Tags": "Organization, Men, Toiletries",
+    "Categories": "Men, Organization, Popular",
+    "img": "menToiletryBag.jpg",
+    "url": "https://amzn.to/3u73DMO"
+  },
+  {
+    "Title": "Hanging Toiletry Bag",
+    "Description": "Hanging Travel Bag for Toiletries",
+    "Tags": "Organization, Women, Toiletries",
+    "Categories": "Women, Organization, Popular, Toiletries",
+    "img": "womenToiletryBag.jpg",
+    "url": "https://amzn.to/3u73DMO"
+  },
+  {
+    "Title": "Reusable Silicone Food Bags",
+    "Description": "Stasher Silicone Reusable Food Bag for eco-friendly snacks on the road.",
+    "Tags": "Silicone Bags, Reusable, Eco-friendly Snacking",
+    "Categories": "Eco-friendly, Food Storage, Travel Snacks",
+    "img": "siliconeFoodBags.jpg",
+    "url": "https://amzn.to/42i9XOe"
+  },
+  {
+    "Title": "Travel Journal",
+    "Description": "Traveler Journal for documenting your adventures.",
+    "Tags": "Travel Journal, Journaling, Adventure Documentation",
+    "Categories": "Stationery, Adventure",
+    "img": "travelJournal.jpg",
+    "url": "https://amzn.to/3SzjwVN"
+  },
+  {
+    "Title": "Travel-sized Perfume Atomizer",
+    "Description": "Classic Refillable Perfume Atomizer for fragrance on the fly.",
+    "Tags": "Perfume Atomizer, Travel-sized",
+    "Categories": "Fragrance, Beauty, Women",
+    "img": "perfumeAtomizer.jpg",
+    "url": "https://amzn.to/4bfhn8M"
+  },
+  {
+    "Title": "Compact Mirror with LED Lights",
+    "Description": "LED Lighted Travel Makeup Mirror for on-the-go touch-ups.",
+    "Tags": "Travel Mirror, LED Lights, Makeup Accessories",
+    "Categories": "Beauty, Makeup, Women",
+    "img": "compactMirror.jpg",
+    "url": "https://amzn.to/3OjQHtF"
+  },
+  {
+    "Title": "Multipurpose Headwear",
+    "Description": "Buff Headwear that can be worn in various styles for different occasions.",
+    "Tags": "Headwear, Multipurpose, Fashion Accessories",
+    "Categories": "Fashion, Accessories, Outdoor Gear",
+    "img": "multipurposeHeadwear.jpg",
+    "url": "https://amzn.to/3vSbZsd"
+  },
+  {
+    "Title": "Travel-sized Hair Dryer",
+    "Description": "REVLON 1875W Compact Folding Handle Hair Dryer",
+    "Tags": "Hair Dryer, Travel-sized, Hair Styling",
+    "Categories": "Beauty, Hair Care, Women",
+    "img": "travelHairDryer.jpg",
+    "url": "https://amzn.to/travelHairDryer"
+  },
+  {
+    "Title": "Quirky Luggage Tag",
+    "Description": "Customizable Luggage Tag for easy identification.",
+    "Tags": "Luggage Tag, Customizable, Travel Identification",
+    "Categories": "Travel Accessories, Identification, Popular",
+    "img": "quirkyLuggageTag.jpg",
+    "url": "https://amzn.to/3U97tj4"
+  },
+  {
+    "Title": "Noise-Canceling Earplugs",
+    "Description": "Noise Reduction Ear Plugs for a peaceful sleep during travels.",
+    "Tags": "Earplugs, Noise-Canceling, Sleep Accessories",
+    "Categories": "Sleep, Travel Accessories, Popular",
+    "img": "noiseCancellingEarplugs.jpg",
+    "url": "https://amzn.to/47YUpAc"
+  },
+  {
+    "Title": "Compact Umbrella",
+    "Description": "Repel Windproof Travel Umbrella for unexpected rain showers.",
+    "Tags": "Umbrella, Windproof, Outdoor",
+    "Categories": "Weather, Travel Gear, Outdoor Popular",
+    "img": "travelUmbrella.jpg",
+    "url": "https://amzn.to/42cJBwK"
+  },
+  {
+    "Title": "RFID Blocking Wallet",
+    "Description": "Travelambo RFID Blocking Wallet to keep your cards safe.",
+    "Tags": "RFID Blocking, Wallet, Card Security",
+    "Categories": "Security, Accessories, Men, Safety",
+    "img": "rfidBlockingWallet.jpg",
+    "url": "https://amzn.to/498sr5T"
   }
 ]
