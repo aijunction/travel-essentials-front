@@ -36,7 +36,6 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip,
 } from "reactstrap";
 
 class DemoNavbar extends React.Component {
@@ -116,11 +115,10 @@ class DemoNavbar extends React.Component {
                       <div className="dropdown-menu-inner">
                         <Media
                           className="d-flex align-items-center"
-                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/overview?ref=adsr-navbar"
-                          target="_blank"
+                          href="/luggage"
                         >
                           <div className="icon icon-shape bg-gradient-primary rounded-circle text-white">
-                            <i className="ni ni-spaceship" />
+                            <i className="ni ni-briefcase-24" />
                           </div>
                           <Media body className="ml-3">
                             <h6 className="heading text-primary mb-md-1">
@@ -130,11 +128,10 @@ class DemoNavbar extends React.Component {
                         </Media>
                         <Media
                           className="d-flex align-items-center"
-                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/colors?ref=adsr-navbar"
-                          target="_blank"
+                          href="/electronics"
                         >
-                          <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
-                            <i className="ni ni-palette" />
+                          <div className="icon icon-shape bg-gradient-primary rounded-circle text-white">
+                            <i className="ni ni-headphones" />
                           </div>
                           <Media body className="ml-3">
                             <h6 className="heading text-primary mb-md-1">
@@ -144,42 +141,40 @@ class DemoNavbar extends React.Component {
                         </Media>
                         <Media
                           className="d-flex align-items-center"
-                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alert?ref=adsr-navbar"
+                          href="/accessories"
                           target="_blank"
                         >
-                          <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                            <i className="ni ni-ui-04" />
+                          <div className="icon icon-shape bg-gradient-primary rounded-circle text-white">
+                            <i className="ni ni-glasses-2" />
                           </div>
                           <Media body className="ml-3">
-                            <h5 className="heading text-warning mb-md-1">
+                            <h5 className="heading text-primary mb-md-1">
                               Accessories
                             </h5>
                           </Media>
                         </Media>
                         <Media
                           className="d-flex align-items-center"
-                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alert?ref=adsr-navbar"
-                          target="_blank"
+                          href="/health"
                         >
-                          <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                            <i className="ni ni-ui-04" />
+                          <div className="icon icon-shape bg-gradient-primary rounded-circle text-white">
+                            <i className="ni ni-support-16" />
                           </div>
                           <Media body className="ml-3">
-                            <h5 className="heading text-warning mb-md-1">
+                            <h5 className="heading text-primary mb-md-1">
                               Health and Safety
                             </h5>
                           </Media>
                         </Media>
                         <Media
                           className="d-flex align-items-center"
-                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alert?ref=adsr-navbar"
-                          target="_blank"
+                          href="/apparel"
                         >
-                          <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                            <i className="ni ni-ui-04" />
+                          <div className="icon icon-shape bg-gradient-primary rounded-circle text-white">
+                            <i className="ni ni-shop" />
                           </div>
                           <Media body className="ml-3">
-                            <h5 className="heading text-warning mb-md-1">
+                            <h5 className="heading text-primary mb-md-1">
                               Clothing and Apparel
                             </h5>
                           </Media>
@@ -213,16 +208,16 @@ class DemoNavbar extends React.Component {
                       <span className="nav-link-inner--text">Traveler</span>
                     </DropdownToggle>
                     <DropdownMenu>
-                      <DropdownItem to="/landing-page" tag={Link}>
+                      <DropdownItem to="/women-travel-essentials" tag={Link}>
                         Travel Essentials for Women
                       </DropdownItem>
-                      <DropdownItem to="/profile-page" tag={Link}>
+                      <DropdownItem to="/men-travel-essentials" tag={Link}>
                         Travel Essentials for Men
                       </DropdownItem>
-                      <DropdownItem to="/login-page" tag={Link}>
+                      <DropdownItem to="/baby-travel-essentials" tag={Link}>
                         Travel Essentials for Baby
                       </DropdownItem>
-                      <DropdownItem to="/register-page" tag={Link}>
+                      <DropdownItem to="/toddler-travel-essentials" tag={Link}>
                         Travel Essentials for Toddler
                       </DropdownItem>
                     </DropdownMenu>

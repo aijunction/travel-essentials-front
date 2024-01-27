@@ -32,6 +32,11 @@ import Register from "views/examples/Register.js";
 import Products from "views/popular/Products.js";
 import AuthLayout from "layouts/Auth.js";
 import AdminLayout from "layouts/Admin.js";
+import WomenEssentials from "views/traveler/womenEssentials.js";
+import MenEssentials from "views/traveler/menEssentials";
+import ToddlerEssentials from "views/traveler/toddlerEssentials";
+import BabyEssentials from "views/traveler/babyEssentials";
+import ProductTemplate from "components/PageTemplats/ProductTemplate";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -41,6 +46,66 @@ root.render(
       <Route path="/" exact element={<Index />} />
       <Route path="/landing-page" exact element={<Landing />} />
       <Route path="/products-page" exact element={<Products />} />
+      <Route
+        path="/luggage"
+        exact
+        element={
+          <ProductTemplate
+            pageName={"luggage"}
+            heroTitle={"Essential Luggage"}
+            pageDescription={"essential luggage"}
+          />
+        }
+      />
+      <Route
+        path="/electronics"
+        exact
+        element={
+          <ProductTemplate
+            pageName={"Electronics"}
+            heroTitle={"Essential Electronics"}
+            pageDescription={"essential electronics"}
+          />
+        }
+      />
+      <Route
+        path="/apparel"
+        exact
+        element={
+          <ProductTemplate
+            pageName={"Apparel"}
+            heroTitle={"Essential Apparel"}
+            pageDescription={"essential Apparel"}
+          />
+        }
+      />
+      <Route
+        path="/health"
+        exact
+        element={
+          <ProductTemplate
+            pageName={"Health"}
+            heroTitle={"Essential Health"}
+            pageDescription={"essential Apparel"}
+          />
+        }
+      />
+      <Route
+        path="/women-travel-essentials"
+        exact
+        element={<WomenEssentials />}
+      />
+      <Route path="/men-travel-essentials" exact element={<MenEssentials />} />
+      <Route
+        path="/toddler-travel-essentials"
+        exact
+        element={<ToddlerEssentials />}
+      />
+      <Route
+        path="/baby-travel-essentials"
+        exact
+        element={<BabyEssentials />}
+      />
       <Route path="/login-page" exact element={<Login />} />
       <Route path="/profile-page" exact element={<Profile />} />
       <Route path="/register-page" exact element={<Register />} />

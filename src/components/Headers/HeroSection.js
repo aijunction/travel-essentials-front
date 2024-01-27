@@ -1,4 +1,6 @@
-const { Container, Row, Col, Button } = require("reactstrap");
+import React from "react";
+// reactstrap components
+import { Button, Container, Row, Col } from "reactstrap";
 
 const HeroSection = ({ title, description }) => {
   return (

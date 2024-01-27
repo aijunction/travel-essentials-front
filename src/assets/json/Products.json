@@ -3,7 +3,7 @@
     "Title": "Neck Pillow",
     "Description": "Pillow provides neck support and is easy to pack",
     "Tags": "Comfort,Airplane,Sleep",
-    "Categories": "Popular,Women, Men",
+    "Categories": "Popular,Women,Men",
     "img": "travelPillow.jpg",
     "url": "https://www.amazon.com/MLVOC-Comfortable-Breathable-Washable-Contoured/dp/B082K8ZNQ1/ref=sr_1_1_sspa?crid=1OM1Z3WC7A607&keywords=neck%2Bpillow%2Bfor%2Bsleeping%2Btravel&qid=1705270437&sprefix=neck%2Bpillow%2B%2Caps%2C119&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
   },
@@ -11,15 +11,15 @@
     "Title": "Collapsible Tote Bag",
     "Description": "Standard Reusable Shopping Bag that folds into a compact pouch",
     "Tags": "Convenience,airplance,accessories",
-    "Categories": "Women, Shopping",
+    "Categories": "Women,Shopping",
     "img": "collapsibletote.jpg",
     "url": "https://amzn.to/3OcFL0Q"
   },
   {
     "Title": "Infinitiy Scarf",
     "Description": "Infinity Scarf with a hidden zipper pocket for storing valuables.",
-    "Tags": "Scarf, Hidden Pocket,Clothes, Valuables Storage",
-    "Categories": "Women, Fashion",
+    "Tags": "Scarf,Hidden Pocket,Clothes,Valuables Storage",
+    "Categories": "Women,Fashion,Apparel",
     "img": "infinityScarf.jpg",
     "url": "https://amzn.to/3UdASJ0"
   },
@@ -27,23 +27,23 @@
     "Title": "Solar Power Charger Bank",
     "Description": "Catch rays to charge your phone",
     "Tags": "Power Bank,Electronics,Solar Poer",
-    "Categories": "Women, Electronics",
+    "Categories": "Women,Electronics,Men",
     "img": "solarCharger.jpg",
     "url": "https://amzn.to/3SuSQVY"
   },
   {
     "Title": "Collapsible Water Bottle",
     "Description": "Water Bottle that can be collapsed and easily stored up when not in use",
-    "Tags": "Water Bottle, Collapsible, Travel Hydration",
-    "Categories": "Women, Water Bottle",
+    "Tags": "Water Bottle,Collapsible,Travel Hydration",
+    "Categories": "Women,Water Bottle,Men",
     "img": "collapsibleBottle.jpg",
     "url": "https://amzn.to/3Sw1sMe"
   },
   {
     "Title": "Portable Scale",
     "Description": "Never overpay for luggage fees again!",
-    "Tags": "Electronics, Scale",
-    "Categories": "Popular",
+    "Tags": "Electronics,Scale",
+    "Categories": "Popular,Men,Women,Electronics",
     "img": "portableScale.jpg",
     "url": "https://amzn.to/3Ol08Jr"
   },
@@ -51,7 +51,7 @@
     "Title": "Mircrofiber Towel",
     "Description": "The softest and easiest to pack towel on the market",
     "Tags": "Towels, Beauty",
-    "Categories": "Popular, Women",
+    "Categories": "Popular,Women",
     "img": "microFiberTowel.jpg",
     "url": "https://amzn.to/3OfiNX2"
   },
@@ -66,16 +66,16 @@
   {
     "Title": "Portable Massage Gun",
     "Description": "For those aches and pains after long haul flights",
-    "Tags": "Athletes, Fitness, Relaxation",
-    "Categories": "Popular, Fitness",
+    "Tags": "Athletes,Fitness,Relaxation",
+    "Categories": "Popular,Fitness",
     "img": "portableMassageGun.jpg",
     "url": "https://amzn.to/47TgBvc"
   },
   {
     "Title": "International Adapter",
     "Description": "Universal All in One Worldwide Travel Adapter Power with Dual USB Charging Ports for USA EU UK AUS",
-    "Tags": "Electronics, Adapter",
-    "Categories": "Popular, Europe, Australia, USA",
+    "Tags": "Electronics,Adapter",
+    "Categories": "Popular,Europe,Australia,USA,Electronics",
     "img": "internationalAdapter.jpg",
     "url": "https://amzn.to/3SyYVjd"
   },
@@ -83,7 +83,7 @@
     "Title": "Travel Friendly Yoga Mat",
     "Description": "Anti-Slip Folding Exercise Mat for Yoga, Pilates, Home Workouts, and Floor Exercises",
     "Tags": "Yoga, Fitness",
-    "Categories": "Women, Men, Fitness, Athletes",
+    "Categories": "Women,Men,Fitness,Athletes",
     "img": "yogaMat.jpg",
     "url": "https://amzn.to/48Q0yQa"
   },
@@ -91,31 +91,31 @@
     "Title": "Packing Cubes",
     "Description": "5 Set Packing Cubes - Travel Organizers with Laundry Bag",
     "Tags": "Packing Cubes, Laundry, Organization",
-    "Categories": "Women, Men, Organization, Popular",
+    "Categories": "Women,Men,Organization, Popular",
     "img": "packingCubes.jpg",
     "url": "https://amzn.to/47Sxd6z"
   },
   {
     "Title": "Toiletry Bag",
     "Description": "Hanging Travel Bag for Toiletries",
-    "Tags": "Organization, Men, Toiletries",
-    "Categories": "Men, Organization, Popular",
+    "Tags": "Organization,Men,Toiletries",
+    "Categories": "Men,Organization,Popular",
     "img": "menToiletryBag.jpg",
     "url": "https://amzn.to/3u73DMO"
   },
   {
     "Title": "Hanging Toiletry Bag",
     "Description": "Hanging Travel Bag for Toiletries",
-    "Tags": "Organization, Women, Toiletries",
-    "Categories": "Women, Organization, Popular, Toiletries",
+    "Tags": "Organization,Women,Toiletries",
+    "Categories": "Women,Organization,Popular,Toiletries",
     "img": "womenToiletryBag.jpg",
     "url": "https://amzn.to/3u73DMO"
   },
   {
     "Title": "Reusable Silicone Food Bags",
     "Description": "Stasher Silicone Reusable Food Bag for eco-friendly snacks on the road.",
-    "Tags": "Silicone Bags, Reusable, Eco-friendly Snacking",
-    "Categories": "Eco-friendly, Food Storage, Travel Snacks",
+    "Tags": "Silicone Bags,Reusable,Eco-friendly Snacking",
+    "Categories": "Eco-friendly,Food Storage,Travel Snacks",
     "img": "siliconeFoodBags.jpg",
     "url": "https://amzn.to/42i9XOe"
   },
@@ -123,7 +123,7 @@
     "Title": "Travel Journal",
     "Description": "Traveler Journal for documenting your adventures.",
     "Tags": "Travel Journal, Journaling, Adventure Documentation",
-    "Categories": "Stationery, Adventure",
+    "Categories": "Stationery,Adventure",
     "img": "travelJournal.jpg",
     "url": "https://amzn.to/3SzjwVN"
   },
@@ -131,15 +131,15 @@
     "Title": "Travel-sized Perfume Atomizer",
     "Description": "Classic Refillable Perfume Atomizer for fragrance on the fly.",
     "Tags": "Perfume Atomizer, Travel-sized",
-    "Categories": "Fragrance, Beauty, Women",
+    "Categories": "Fragrance,Beauty,Women",
     "img": "perfumeAtomizer.jpg",
     "url": "https://amzn.to/4bfhn8M"
   },
   {
     "Title": "Compact Mirror with LED Lights",
     "Description": "LED Lighted Travel Makeup Mirror for on-the-go touch-ups.",
-    "Tags": "Travel Mirror, LED Lights, Makeup Accessories",
-    "Categories": "Beauty, Makeup, Women",
+    "Tags": "Travel Mirror,LED Lights,Makeup Accessories",
+    "Categories": "Beauty,Makeup,Women",
     "img": "compactMirror.jpg",
     "url": "https://amzn.to/3OjQHtF"
   },
@@ -147,7 +147,7 @@
     "Title": "Multipurpose Headwear",
     "Description": "Buff Headwear that can be worn in various styles for different occasions.",
     "Tags": "Headwear, Multipurpose, Fashion Accessories",
-    "Categories": "Fashion, Accessories, Outdoor Gear",
+    "Categories": "Fashion,Accessories,Outdoor Gear,Apparel",
     "img": "multipurposeHeadwear.jpg",
     "url": "https://amzn.to/3vSbZsd"
   },
@@ -155,23 +155,23 @@
     "Title": "Travel-sized Hair Dryer",
     "Description": "REVLON 1875W Compact Folding Handle Hair Dryer",
     "Tags": "Hair Dryer, Travel-sized, Hair Styling",
-    "Categories": "Beauty, Hair Care, Women",
+    "Categories": "Beauty,Hair Care,Women",
     "img": "travelHairDryer.jpg",
     "url": "https://amzn.to/travelHairDryer"
   },
   {
     "Title": "Quirky Luggage Tag",
     "Description": "Customizable Luggage Tag for easy identification.",
-    "Tags": "Luggage Tag, Customizable, Travel Identification",
-    "Categories": "Travel Accessories, Identification, Popular",
+    "Tags": "Luggage Tag,Customizable,Travel Identification",
+    "Categories": "Travel Accessories,Identification,Popular",
     "img": "quirkyLuggageTag.jpg",
     "url": "https://amzn.to/3U97tj4"
   },
   {
     "Title": "Noise-Canceling Earplugs",
     "Description": "Noise Reduction Ear Plugs for a peaceful sleep during travels.",
-    "Tags": "Earplugs, Noise-Canceling, Sleep Accessories",
-    "Categories": "Sleep, Travel Accessories, Popular",
+    "Tags": "Earplugs,Noise-Canceling,Sleep Accessories",
+    "Categories": "Sleep,Accessories,Popular",
     "img": "noiseCancellingEarplugs.jpg",
     "url": "https://amzn.to/47YUpAc"
   },
@@ -187,8 +187,160 @@
     "Title": "RFID Blocking Wallet",
     "Description": "Travelambo RFID Blocking Wallet to keep your cards safe.",
     "Tags": "RFID Blocking, Wallet, Card Security",
-    "Categories": "Security, Accessories, Men, Safety",
+    "Categories": "Security,Accessories,Men,Safety",
     "img": "rfidBlockingWallet.jpg",
     "url": "https://amzn.to/498sr5T"
+  },
+  {
+    "Item": "Portable Travel Crib",
+    "Description": "A lightweight and portable crib for a comfortable sleep environment.",
+    "Categories": "Sleep, Toddler, Baby",
+    "Tags": "Sleep, Crib",
+    "img": "travelCrib.jpg",
+    "url": "https://amzn.to/48LoJPR"
+  },
+  {
+    "Item": "Compact Stroller",
+    "Description": "A foldable and lightweight stroller for easy maneuvering during travels.",
+    "Categories": "Stroller,Toddler,Travel Gear,Baby",
+    "Tags": "Stroller,Toddler,Compact,Lightweight",
+    "img": "compactStroller.jpg",
+    "url": "https://amzn.to/3u56xSf"
+  },
+  {
+    "Item": "Travel-friendly Diaper Bag",
+    "Description": "A compact and organized diaper bag with compartments for essentials.",
+    "Categories": "Diaper Bag,Toddler,Organization,Baby",
+    "Tags": "Diaper Bag,Organization",
+    "img": "travelDiaperBag.jpg",
+    "url": "https://amzn.to/3OkMje6"
+  },
+  {
+    "Item": "Car Seat Travel Bag",
+    "Description": "Protective bag for a toddler's car seat during travel and storage.",
+    "Categories": "Car Seat,Toddler,Travel Gear,Baby",
+    "Tags": "Car Seat,Toddler,Protection",
+    "img": "carSeatTravelBag.jpg",
+    "url": "https://amzn.to/4bnT3Sq"
+  },
+  {
+    "Item": "Kids Headphones",
+    "Description": "Volume-limited headphones to keep toddlers entertained during travel.",
+    "Categories": "Entertainment,Toddler,Travel Gear,,Electronics",
+    "Tags": "Entertainment,Headphones,Toddler",
+    "img": "kidsHeadphones.jpg",
+    "url": "https://amzn.to/3SvkfqK"
+  },
+  {
+    "Item": "Portable Changing Pad",
+    "Description": "A compact and padded changing mat for on-the-go diaper changes.",
+    "Categories": "Changing,Toddler,Baby",
+    "Tags": "Changing,Diaper,Travel",
+    "img": "portableChangingPad.jpg",
+    "url": "https://amzn.to/3OGcKv5"
+  },
+  {
+    "Item": "Travel Baby Formula Dispenser",
+    "Description": "Dispenser with compartments for pre-measured baby formula servings.",
+    "Categories": "Feeding,Baby",
+    "Tags": "Feeding,Formula",
+    "img": "formulaDispenser.jpg",
+    "url": "https://amzn.to/3HAGLbA"
+  },
+  {
+    "Item": "Collapsible Travel High Chair",
+    "Description": "A portable high chair that can be folded for easy transport.",
+    "Categories": "Feeding,Toddler,Travel Gear,Outdoor,Baby",
+    "Tags": "High Chair,Toddler,Folding,Outdoor",
+    "img": "travelHighChair.jpg",
+    "url": "https://amzn.to/497KiKi"
+  },
+  {
+    "Item": "UV-Protective Sun Hat",
+    "Description": "A sun hat with UV protection to keep you shaded during outdoor activities.",
+    "Categories": "Sun Protection,Women,Outdoor Gear, Popular",
+    "Tags": "Sun Hat, UV Protection, Outdoor",
+    "img": "uvSunHat.jpg",
+    "url": "https://amzn.to/3SvISnk"
+  },
+  {
+    "Item": "Toddler UV-Protective Sun Hat",
+    "Description": "A sun hat with UV protection to keep your toddler shaded during outdoor activities.",
+    "Categories": "Sun Protection,Toddler,Outdoor Gear",
+    "Tags": "Sun Hat,UV Protection,Outdoor",
+    "img": "toddleruvSunHat.jpg",
+    "url": "https://amzn.to/uvSunHat"
+  },
+  {
+    "Item": "Baby Carrier",
+    "Description": "A comfortable and secure baby carrier for hands-free travel with your toddler.",
+    "Categories": "Carrier,Baby,Travel Gear,Toddler",
+    "Tags": "Carrier,Travel,Comfort",
+    "img": "babyCarrier.jpg",
+    "url": "https://amzn.to/3UjFm0z"
+  },
+  {
+    "Item": "Child-Safe Insect Repellent",
+    "Description": "Gentle and effective insect repellent suitable for toddlers.",
+    "Categories": "Safety,Toddler,Outdoor Gear",
+    "Tags": "Insect Repellent,Safety,Outdoor",
+    "img": "childInsectRepellent.jpg",
+    "url": "https://amzn.to/42gMv3z"
+  },
+  {
+    "Item": "Travel First Aid Kit for Kids",
+    "Description": "A compact first aid kit with essentials for toddler emergencies.",
+    "Categories": "Safety,Toddler,Health",
+    "Tags": "First Aid,Safety,Travel",
+    "img": "kidsFirstAidKit.jpg",
+    "url": "https://amzn.to/3UghXwV"
+  },
+  {
+    "Item": "Toddler Travel Pillow",
+    "Description": "A small and supportive travel pillow designed for toddlers.",
+    "Categories": "Comfort,Toddler,",
+    "Tags": "Travel Pillow,Comfort,Toddler,Sleep",
+    "img": "toddlerTravelPillow.jpg",
+    "url": "https://amzn.to/3SeZ8I7"
+  },
+  {
+    "Item": "Baby Grooming Kit",
+    "Description": "Baby Healthcare and Grooming Kit.",
+    "Categories": "Health,Baby,Grooming",
+    "Tags": "Health,Baby,Grooming",
+    "img": "babyGroomingKit.jpg",
+    "url": "https://amzn.to/47QE2W3"
+  },
+  {
+    "Item": "Multi-tool Pocket Knife",
+    "Description": "Compact and versatile pocket knife for various travel needs.",
+    "Categories": "Tools,Men,Travel Gear",
+    "Tags": "Pocket Knife,Multi-tool,Outdoor",
+    "img": "pocketKnife.jpg",
+    "url": "https://amzn.to/47VUg0a"
+  },
+  {
+    "Item": "Travel-friendly Portable Grill",
+    "Description": "Compact and portable grill for outdoor cooking during travel.",
+    "Categories": "Outdoor Gear,Men,Outdoor",
+    "Tags": "Portable Grill, Outdoor Cooking, Travel",
+    "img": "portableGrill.jpg",
+    "url": "https://amzn.to/portableGrill"
+  },
+  {
+    "Item": "Quick-Dry Underwear",
+    "Description": "Moisture-wicking and quick-drying underwear for comfort during travel.",
+    "Categories": "Apparel,Men",
+    "Tags": "Underwear,Quick-Dry,Travel",
+    "img": "quickDryUnderwear.jpg",
+    "url": "https://amzn.to/3u83UyT"
+  },
+  {
+    "Item": "Quick-Dry Underwear",
+    "Description": "Moisture-wicking and quick-drying underwear for comfort during travel.",
+    "Categories": "Apparel,Women",
+    "Tags": "Underwear,Quick-Dry,Travel",
+    "img": "quickDryUnderwearWomen.jpg",
+    "url": "https://amzn.to/3u5gwqH"
   }
 ]

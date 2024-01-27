@@ -22,6 +22,7 @@ import Login from "views/examples/Login.js";
 import Tables from "views/examples/Tables.js";
 import Icons from "views/examples/Icons.js";
 import Dashboard from "views/examples/Dashboard.js";
+import MenEssentials from "views/traveler/menEssentials";
 
 var routes = [
   {

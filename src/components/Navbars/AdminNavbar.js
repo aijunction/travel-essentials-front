@@ -34,7 +34,7 @@ import {
   Media,
   NavItem,
 } from "reactstrap";
-import DemoNavbar from "./DemoNavbar";
+
 import "../../assets/css/travelEssentials.css";
 const AdminNavbar = (props) => {
   return (
@@ -152,10 +152,10 @@ const AdminNavbar = (props) => {
                 <span className="nav-link-inner--text">Traveler</span>
               </DropdownToggle>
               <DropdownMenu>
-                <DropdownItem to="/landing-page" tag={Link}>
+                <DropdownItem to="/women-travel-essentials" tag={Link}>
                   Travel Essentials for Women
                 </DropdownItem>
-                <DropdownItem to="/profile-page" tag={Link}>
+                <DropdownItem to="/men-travel-essentials" tag={Link}>
                   Travel Essentials for Men
                 </DropdownItem>
                 <DropdownItem to="/login-page" tag={Link}>
