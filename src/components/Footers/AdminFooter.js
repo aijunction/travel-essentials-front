@@ -52,7 +52,7 @@ const Footer = () => {
 
             <NavItem>
               <NavLink
-                href="https://www.creative-tim.com/presentation?ref=adr-admin-footer"
+                href="/about-us"
                 rel="noopener noreferrer"
                 target="_blank"
               >

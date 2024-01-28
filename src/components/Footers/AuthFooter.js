@@ -49,10 +49,7 @@ const Login = () => {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink
-                    href="https://www.creative-tim.com/presentation?ref=adr-auth-footer"
-                    target="_blank"
-                  >
+                  <NavLink href="/about-us" target="_blank">
                     About Us
                   </NavLink>
                 </NavItem>

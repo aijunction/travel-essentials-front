@@ -33,10 +33,18 @@ import Products from "views/popular/Products.js";
 import AuthLayout from "layouts/Auth.js";
 import AdminLayout from "layouts/Admin.js";
 import WomenEssentials from "views/traveler/womenEssentials.js";
-import MenEssentials from "views/traveler/menEssentials";
-import ToddlerEssentials from "views/traveler/toddlerEssentials";
-import BabyEssentials from "views/traveler/babyEssentials";
-import ProductTemplate from "components/PageTemplats/ProductTemplate";
+import MenEssentials from "views/traveler/menEssentials.js";
+import ToddlerEssentials from "views/traveler/toddlerEssentials.js";
+import BabyEssentials from "views/traveler/babyEssentials.js";
+import ProductTemplate from "components/PageTemplats/ProductTemplate.js";
+import Checklist from "components/Checklists/checklist.js";
+import { weekendGetawayItems } from "variables/checklistItems.js";
+import Businesslist from "views/checklists/businessLists";
+import Adventurelist from "views/checklists/adventureList";
+import Internationallist from "views/checklists/internationalList";
+import PrivacyPolicy from "views/Legal/privacyPolicy";
+import AboutUs from "views/Legal/About";
+import FAQ from "views/Legal/FAQ";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -46,6 +54,29 @@ root.render(
       <Route path="/" exact element={<Index />} />
       <Route path="/landing-page" exact element={<Landing />} />
       <Route path="/products-page" exact element={<Products />} />
+      <Route path="/privacy-policy" exact element={<PrivacyPolicy />} />
+      <Route path="/about-us" exact element={<AboutUs />} />
+      <Route path="/FAQ" exact element={<FAQ />} />
+      <Route
+        path="/weekend-getaway-checklist"
+        exact
+        element={<Checklist initialItems={weekendGetawayItems} />}
+      />
+      <Route
+        path="/business-travel-essentials-checklist"
+        exact
+        element={<Businesslist />}
+      />
+      <Route
+        path="/adventure-travel-essentials-checklist"
+        exact
+        element={<Adventurelist />}
+      />
+      <Route
+        path="/international-travel-essentials-checklist"
+        exact
+        element={<Internationallist />}
+      />
       <Route
         path="/luggage"
         exact

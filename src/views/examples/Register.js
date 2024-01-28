@@ -222,7 +222,7 @@ export default function Register() {
                               <span>
                                 I agree with the{" "}
                                 <a
-                                  href="#pablo"
+                                  href="/privacy-policy"
                                   onClick={(e) => e.preventDefault()}
                                 >
                                   Privacy Policy
