@@ -53,7 +53,7 @@ root.render(
     <Routes>
       <Route path="/" exact element={<Index />} />
       <Route path="/landing-page" exact element={<Landing />} />
-      <Route path="/products-page" exact element={<Products />} />
+      <Route path="/popular-travel-essentials" exact element={<Products />} />
       <Route path="/privacy-policy" exact element={<PrivacyPolicy />} />
       <Route path="/about-us" exact element={<AboutUs />} />
       <Route path="/FAQ" exact element={<FAQ />} />

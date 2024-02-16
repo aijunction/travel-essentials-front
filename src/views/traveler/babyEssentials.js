@@ -7,7 +7,9 @@ export default function BabyEssentials() {
       <ProductTemplate
         pageName={"Baby"}
         heroTitle={"Baby Travel Essentials"}
-        pageDescription={"Why me"}
+        pageDescription={
+          "Explore our curated collection of baby travel essentials. This list features must-have items for a hassle-free journey with your baby. From compact gear to comforting accessories, we've chosen essentials that prioritize both convenience and safety. Make family travel a breeze with this list"
+        }
       />
     </>
   );

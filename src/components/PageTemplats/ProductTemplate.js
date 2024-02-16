@@ -5,6 +5,7 @@ import products from "../../assets/json/Products.json";
 import { Container, Row, Col } from "reactstrap";
 import Item from "views/examples/item.js";
 import HeroSection from "components/Headers/HeroSection.js";
+import CardsFooter from "components/Footers/CardsFooter";
 const ProductTemplate = ({ pageName, heroTitle, pageDescription }) => {
   return (
     <div>
@@ -38,6 +39,7 @@ const ProductTemplate = ({ pageName, heroTitle, pageDescription }) => {
           </Row>
         </Container>
       </section>
+      <CardsFooter />
     </div>
   );
 };

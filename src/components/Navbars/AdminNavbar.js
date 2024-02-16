@@ -168,11 +168,9 @@ const AdminNavbar = (props) => {
             </UncontrolledDropdown>
             <NavItem>
               <NavLink
-                to="/products-page"
+                to="/popular-travel-essentials"
                 tag={Link}
                 className="nav-link-icon"
-                href="https://www.instagram.com/creativetimofficial"
-                target="_blank"
               >
                 <span className="nav-link-inner--text dash-nav-link">
                   Popular

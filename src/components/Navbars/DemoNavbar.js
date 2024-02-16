@@ -37,6 +37,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import SearchBar from "components/SearchBar/Searchbar";
 
 class DemoNavbar extends React.Component {
   componentDidMount() {
@@ -232,12 +233,7 @@ class DemoNavbar extends React.Component {
                     </DropdownMenu>
                   </UncontrolledDropdown>
                   <NavItem>
-                    <NavLink
-                      to="/products-page"
-                      tag={Link}
-                      href="https://www.instagram.com/creativetimofficial"
-                      target="_blank"
-                    >
+                    <NavLink to="/popular-travel-essentials" tag={Link}>
                       <span className="nav-link-inner--text dash-nav-link">
                         Popular
                       </span>
@@ -245,6 +241,9 @@ class DemoNavbar extends React.Component {
                   </NavItem>
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
+                  <NavItem>
+                    <SearchBar />
+                  </NavItem>
                   <NavItem>
                     <NavLink
                       to="/login-page"

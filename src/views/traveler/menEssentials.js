@@ -7,7 +7,9 @@ export default function MenEssentials() {
       <ProductTemplate
         pageName={"Men"}
         heroTitle={"Travel Essentials for Men"}
-        description={"Why me"}
+        pageDescription={
+          "Discover essential travel gear curated exclusively for men. Our Travel Essentials for Men page brings you a handpicked selection of stylish and functional items to enhance your travel experience. we've got your journey covered."
+        }
       />
     </>
   );

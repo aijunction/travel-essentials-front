@@ -7,7 +7,9 @@ export default function WomenEssentials() {
       <ProductTemplate
         pageName={"Women"}
         heroTitle={"Travel Essentials for Women"}
-        description={"Why me"}
+        pageDescription={
+          "Explore stylish and practical travel essentials curated for women. Our collection ensures you're well-prepared for any journey. Elevate your travel experience with our specially chosen essentials tailored to meet women's needs. Pack smart, travel chic."
+        }
       />
     </>
   );
