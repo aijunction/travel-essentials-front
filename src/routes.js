@@ -18,11 +18,10 @@
 
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
-import Login from "views/examples/Login.js";
 import Tables from "views/examples/Tables.js";
+import Favorites from "views/favorites/Favorites.js";
 import Icons from "views/examples/Icons.js";
 import Dashboard from "views/examples/Dashboard.js";
-import MenEssentials from "views/traveler/menEssentials";
 
 var routes = [
   {
@@ -48,10 +47,10 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/tables",
+    path: "/favorites",
     name: "Favorites",
     icon: "ni ni-favourite-28 text-red",
-    component: <Tables />,
+    component: <Favorites />,
     layout: "/admin",
   },
   {

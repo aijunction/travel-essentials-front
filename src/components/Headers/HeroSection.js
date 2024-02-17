@@ -21,7 +21,7 @@ const HeroSection = ({ title, description }) => {
         <Container className="py-lg-md d-flex">
           <div className="col px-0">
             <Row>
-              <Col lg="6">
+              <Col lg="9">
                 <h1 className="display-3 text-white">{title}</h1>
                 <p className="lead text-white">{description}</p>
               </Col>

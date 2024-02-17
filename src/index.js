@@ -60,7 +60,15 @@ root.render(
       <Route
         path="/weekend-getaway-checklist"
         exact
-        element={<Checklist initialItems={weekendGetawayItems} />}
+        element={
+          <Checklist
+            title={"Weekend Travel Essentials Checklist "}
+            initialItems={weekendGetawayItems}
+            description={
+              "Streamline your weekend getaway packing with our curated travel essentials checklist. From must-have items to handy tips, ensure you're prepared for a stress-free adventure. Pack smarter, travel lighter, and make the most of every moment"
+            }
+          />
+        }
       />
       <Route
         path="/business-travel-essentials-checklist"
@@ -83,8 +91,10 @@ root.render(
         element={
           <ProductTemplate
             pageName={"luggage"}
-            heroTitle={"Essential Luggage"}
-            pageDescription={"essential luggage"}
+            heroTitle={"Travel Essentials Luggage"}
+            pageDescription={
+              "Discover the perfect travel companion for your journey. Explore our curated selection of luggage essentials, designed to match your style and meet your travel needs. From sleek carry-ons to spacious duffels, find the ideal bag to accompany you on every adventure"
+            }
           />
         }
       />
@@ -94,8 +104,10 @@ root.render(
         element={
           <ProductTemplate
             pageName={"Electronics"}
-            heroTitle={"Essential Electronics"}
-            pageDescription={"essential electronics"}
+            heroTitle={"Travel Essentials Electronics"}
+            pageDescription={
+              "Power up your travels with our handpicked electronics essentials. From portable chargers to noise-canceling headphones, stay connected and entertained wherever you go. Explore our collection and gear up for seamless tech-savvy adventures."
+            }
           />
         }
       />
@@ -105,8 +117,10 @@ root.render(
         element={
           <ProductTemplate
             pageName={"Apparel"}
-            heroTitle={"Essential Apparel"}
-            pageDescription={"essential Apparel"}
+            heroTitle={"Clothing Travel Essentials"}
+            pageDescription={
+              "Travel in style and comfort with our curated clothing and apparel travel essentials. From versatile layers to durable footwear, build a wardrobe that's both practical and chic for your adventures. Explore our collection and pack with confidence for every destination."
+            }
           />
         }
       />
@@ -116,8 +130,10 @@ root.render(
         element={
           <ProductTemplate
             pageName={"Health"}
-            heroTitle={"Essential Health"}
-            pageDescription={"essential Apparel"}
+            heroTitle={"Health Travel Essentials"}
+            pageDescription={
+              "Prioritize your well-being on the road with our curated selection of health and safety essentials. From first aid kits to hand sanitizers, travel confidently knowing you're prepared for any situation. Explore our collection and stay safe wherever your adventures take you."
+            }
           />
         }
       />

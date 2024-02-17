@@ -249,7 +249,6 @@ class DemoNavbar extends React.Component {
                       to="/login-page"
                       tag={Link}
                       className="nav-link-icon"
-                      href="https://www.instagram.com/creativetimofficial"
                       target="_blank"
                     >
                       <span className="nav-link-inner--text">Login</span>

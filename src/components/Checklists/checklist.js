@@ -14,7 +14,7 @@ import {
   UncontrolledDropdown,
 } from "reactstrap";
 
-const Checklist = ({ initialItems }) => {
+const Checklist = ({ initialItems, description, title }) => {
   const [items, setItems] = useState(initialItems || []);
   const [newItem, setNewItem] = useState("");
   const [newItemCategory, setNewItemCategory] = useState("");
@@ -56,14 +56,11 @@ const Checklist = ({ initialItems }) => {
     updatedItems.splice(index, 1);
     setItems(updatedItems);
   };
-  console.timeLog(categories);
+
   return (
     <div>
       <DemoNavbar />
-      <ChecklistHeroSection
-        title={"Checklist"}
-        description={"pageDescription"}
-      />
+      <ChecklistHeroSection title={title} description={description} />
       <section
         className="section section-components pb-0"
         id="checklist-section-components"
@@ -95,7 +92,7 @@ const Checklist = ({ initialItems }) => {
                               className="remove-icon"
                               onClick={() => handleRemoveItem(index)}
                             >
-                              <i class="fa fa-trash" aria-hidden="true"></i>
+                              <i className="fa fa-trash" aria-hidden="true"></i>
                             </span>
                           </li>
                         ))}
@@ -132,7 +129,7 @@ const Checklist = ({ initialItems }) => {
                   </UncontrolledDropdown>
 
                   <span className="add-icon" onClick={() => handleAddItem}>
-                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    <i className="fa fa-plus-circle" aria-hidden="true"></i>
                   </span>
                 </div>
               </Row>

@@ -23,7 +23,7 @@ import { useNavigate } from "react-router-dom";
 import { Badge, Button, Card, CardBody, Col } from "reactstrap";
 
 import "../../assets/css/travelEssentials.css";
-import { collection, doc, setDoc, serverTimestamp } from "firebase/firestore";
+import { collection, doc, setDoc, deleteDoc } from "firebase/firestore";
 import { auth } from "firebase.js";
 import { database } from "firebase.js";
 const Item = ({ productId, title, image, description, tags, url }) => {
@@ -32,8 +32,8 @@ const Item = ({ productId, title, image, description, tags, url }) => {
   const navigate = useNavigate();
   const tagsArr = tags?.split(",");
   const dynamicImage = require(`../../assets/img/productImages/${image}`);
-  console.log(image);
-  const handleFavoriteClick = async () => {
+
+  const handleFavoriteClick = async (name, description, tags, image, url) => {
     // Toggle the favorite status when the heart icon is clicked
     setFavorite((prevFavorite) => !prevFavorite);
 
@@ -41,25 +41,41 @@ const Item = ({ productId, title, image, description, tags, url }) => {
     const user = auth.currentUser;
     console.log(user);
 
-    // Update Firestore with the new favorite status
+    //Update Firestore with the new favorite status
     if (user) {
       const userId = user.uid;
       const userDocRef = doc(collection(database, "users"), userId);
       const favoritesRef = collection(userDocRef, "favorites");
-      const docRef = doc(favoritesRef, productId);
-      if (isFavorite) {
-        await setDoc(docRef, {
-          /* data */
-        });
-      } else {
-        await setDoc(docRef, {
-          timestamp: serverTimestamp(),
-        });
-      }
 
-      // Redirect to the user's profile page after updating favorites
-      navigate("/profile-page"); // Replace with your actual profile page path
+      try {
+        if (isFavorite) {
+          await deleteDoc(favoritesRef);
+        } else {
+          const newFavoriteDocRef = doc(favoritesRef); // Create DocumentReference
+          await setDoc(newFavoriteDocRef, {
+            timestamp: new Date().toISOString(),
+            name: name,
+            description: description,
+            tags: tags,
+            url: url,
+            image: image,
+          });
+        }
+
+        // Redirect to the user's profile page after updating favorites
+        navigate("/admin/user-profile");
+      } catch (error) {
+        console.error("Error updating favorites:", error);
+        // Handle error appropriately, maybe show a message to the user
+      }
+    } else {
+      // User is not logged in, handle this case appropriately
+      console.log("User not logged in.");
+      // Maybe show a message to the user asking them to log in
     }
+
+    // Redirect to the user's profile page after updating favorites
+    //navigate("admin/user-profile"); // Replace with your actual profile page path
   };
   return (
     <>
@@ -69,7 +85,9 @@ const Item = ({ productId, title, image, description, tags, url }) => {
             <div className="icon-right">
               <div
                 className="icon icon-shape fav-icon-shape icon-shape-primary rounded-circle mb-4"
-                onClick={handleFavoriteClick}
+                onClick={() => {
+                  handleFavoriteClick(title, description, tags, image, url);
+                }}
               >
                 <i
                   className="ni ni-favourite-28"
@@ -78,7 +96,6 @@ const Item = ({ productId, title, image, description, tags, url }) => {
                     color: isFavorite ? "red" : "gray",
                   }}
                 />
-                {/* </button> */}
               </div>
             </div>
             <img

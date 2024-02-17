@@ -132,16 +132,25 @@ const AdminNavbar = (props) => {
                 <span className="nav-link-inner--text">Checklists</span>
               </DropdownToggle>
               <DropdownMenu>
-                <DropdownItem to="/landing-page" tag={Link}>
+                <DropdownItem to="/weekend-getaway-checklist" tag={Link}>
                   Weekend Getaway Checklist
                 </DropdownItem>
-                <DropdownItem to="/profile-page" tag={Link}>
+                <DropdownItem
+                  to="/business-travel-essentials-checklist"
+                  tag={Link}
+                >
                   Business Trip Checklist
                 </DropdownItem>
-                <DropdownItem to="/login-page" tag={Link}>
+                <DropdownItem
+                  to="/adventure-travel-essentials-checklist"
+                  tag={Link}
+                >
                   Adventure Travel Checklist
                 </DropdownItem>
-                <DropdownItem to="/register-page" tag={Link}>
+                <DropdownItem
+                  to="/international-travel-essentials-checklist"
+                  tag={Link}
+                >
                   International Travel Checklist
                 </DropdownItem>
               </DropdownMenu>
@@ -158,10 +167,10 @@ const AdminNavbar = (props) => {
                 <DropdownItem to="/men-travel-essentials" tag={Link}>
                   Travel Essentials for Men
                 </DropdownItem>
-                <DropdownItem to="/login-page" tag={Link}>
+                <DropdownItem to="/baby-travel-essentials" tag={Link}>
                   Travel Essentials for Baby
                 </DropdownItem>
-                <DropdownItem to="/register-page" tag={Link}>
+                <DropdownItem to="/toddler-travel-essentials" tag={Link}>
                   Travel Essentials for Toddler
                 </DropdownItem>
               </DropdownMenu>

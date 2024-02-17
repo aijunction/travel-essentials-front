@@ -18,7 +18,7 @@
 import React, { useEffect, useState } from "react";
 
 // reactstrap components
-import { Button, Card, Container, Row, Col } from "reactstrap";
+import { Button, Card, Container, Row, Col, CardBody, Badge } from "reactstrap";
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
@@ -27,7 +27,9 @@ import SimpleFooter from "components/Footers/SimpleFooter.js";
 import { collection, deleteDoc, doc, getDocs, query } from "firebase/firestore";
 import { auth } from "firebase.js";
 import { database } from "firebase.js";
-
+import "../../assets/css/travelEssentials.css";
+import FavoriteItem from "/Users/yvetteagyei/Documents/GitHub/travel-essentials-front/src/views/favorites/favoriteItem.js";
+import Item from "../examples/item.js";
 export default function Profile() {
   const currentUser = auth.currentUser;
 
@@ -205,18 +207,61 @@ export default function Profile() {
                         structure. An artist of considerable range.
                       </p>
                       <h3>Favorites:</h3>
-                      <ul>
-                        {favorites.map((favorite) => (
-                          <li key={favorite.id}>
-                            {/* Display favorite data as needed */}
 
-                            {favorite.id}
-                            <Button onClick={() => deleteFavorite(favorite.id)}>
-                              Remove
-                            </Button>
-                          </li>
-                        ))}
-                      </ul>
+                      {favorites.map((favorite, i) => (
+                        <div key={i}>
+                          <>
+                            <Col lg="6" className="item-col" key={i}>
+                              <Card className="card-lift--hover shadow border-0 card-height">
+                                <CardBody className="item-body">
+                                  <img
+                                    src={require(`../../assets/img/productImages/${favorite.image}`)}
+                                    alt="blue travel neck pillow"
+                                    className="product-img"
+                                  />
+                                  <h6 className="text-primary text-uppercase">
+                                    {favorite.name}
+                                  </h6>
+
+                                  <p className="description mt-3">
+                                    {favorite.description}
+                                  </p>
+                                  <div>
+                                    {favorite.tags?.split(",").map((tag, i) => (
+                                      <Badge
+                                        color="primary"
+                                        pill
+                                        className="mr-1"
+                                        key={i}
+                                      >
+                                        {tag}
+                                      </Badge>
+                                    ))}
+                                  </div>
+                                  <Button
+                                    className="mt-4"
+                                    color="primary"
+                                    href={favorite.url}
+                                    onClick={(e) => {
+                                      e.preventDefault();
+                                      window.open(`${favorite.url}`, "_blank");
+                                    }}
+                                  >
+                                    Buy on Amazon
+                                  </Button>
+
+                                  <Button
+                                    onClick={() => deleteFavorite(favorite.id)}
+                                  >
+                                    Remove
+                                  </Button>
+                                </CardBody>
+                              </Card>
+                            </Col>
+                          </>
+                        </div>
+                      ))}
+
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
                         Show more
                       </a>

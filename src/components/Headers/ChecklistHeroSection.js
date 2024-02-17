@@ -6,15 +6,13 @@ const ChecklistHeroSection = ({ title, description }) => {
   return (
     <div className="position-relative">
       {/* shape Hero */}
-      <section className="section section-lg section-shaped pb-250">
+      <section className="section section-lg section-shaped">
         <div className="shape shape-style-1 shape-default"></div>
-        <Container className="py-lg-md d-flex">
+        <Container className="py-lg-sm d-flex">
           <div className="col px-0">
-            <Row>
-              <Col lg="6">
-                <h1 className="display-3 text-white">
-                  {title} <span>completed with examples</span>
-                </h1>
+            <Row className="row-grid">
+              <Col lg="9">
+                <h1 className="display-3 text-white">{title}</h1>
                 <p className="lead text-white">{description}</p>
               </Col>
             </Row>
