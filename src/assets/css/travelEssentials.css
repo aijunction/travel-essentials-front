@@ -44,6 +44,9 @@
   .category-section:last-child {
     margin-right: 0;
   }
+  .favorite-card {
+    width: 300px;
+  }
 }
 /* Mobile styles */
 @media only screen and (max-width: 767px) {
@@ -52,6 +55,7 @@
     margin-bottom: 20px; /* Adjust spacing */
   }
 }
+
 .custom-checkbox-container {
   display: flex;
   justify-content: space-between;

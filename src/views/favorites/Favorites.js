@@ -33,6 +33,7 @@ import { database } from "firebase.js";
 import "../../assets/css/travelEssentials.css";
 import Header from "components/Headers/Header.js";
 import { useEffect, useState } from "react";
+import CardsFooter from "components/Footers/CardsFooter";
 
 const Favorites = () => {
   const currentUser = auth.currentUser;
@@ -98,54 +99,69 @@ const Favorites = () => {
     <>
       <Header />
       {/* Page content */}
-      <Container className="mt--9" fluid>
-        <h3 className="text-white">Favorites</h3>
+      <section className="section section-lg pt-lg-0 mt--200">
+        <Container className="mt--9" fluid>
+          <h1 className="display-3 text-white"> Favorites </h1>
+        </Container>
+      </section>
+      <section>
+        <Container className="d-flex flex-row flex-wrap align-content-center">
+          {favorites.map((favorite, i) => (
+            <Row className="justify-content-center p-3 flex-grow-1">
+              <Col lg="12 flex-grow-1">
+                <Row className="row-grid">
+                  <Col lg="12" className="item-col" key={i}>
+                    <Card className="card-lift--hover shadow border-0 card-height favorite-card">
+                      <CardBody className="item-body">
+                        <img
+                          src={require(`../../assets/img/productImages/${favorite.image}`)}
+                          alt="blue travel neck pillow"
+                          className="product-img"
+                        />
+                        <h6 className="text-primary text-uppercase">
+                          {favorite.name}
+                        </h6>
 
-        {favorites.map((favorite, i) => (
-          <div key={i}>
-            <>
-              <Col lg="6" className="item-col" key={i}>
-                <Card className="card-lift--hover shadow border-0 card-height">
-                  <CardBody className="item-body">
-                    <img
-                      src={require(`../../assets/img/productImages/${favorite.image}`)}
-                      alt="blue travel neck pillow"
-                      className="product-img"
-                    />
-                    <h6 className="text-primary text-uppercase">
-                      {favorite.name}
-                    </h6>
+                        <p className="description mt-3">
+                          {favorite.description}
+                        </p>
+                        <div>
+                          {favorite.tags?.split(",").map((tag, i) => (
+                            <Badge
+                              color="primary"
+                              pill
+                              className="mr-1"
+                              key={i}
+                            >
+                              {tag}
+                            </Badge>
+                          ))}
+                        </div>
+                        <Button
+                          className="mt-4"
+                          color="primary"
+                          href={favorite.url}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            window.open(`${favorite.url}`, "_blank");
+                          }}
+                        >
+                          Buy on Amazon
+                        </Button>
 
-                    <p className="description mt-3">{favorite.description}</p>
-                    <div>
-                      {favorite.tags?.split(",").map((tag, i) => (
-                        <Badge color="primary" pill className="mr-1" key={i}>
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
-                    <Button
-                      className="mt-4"
-                      color="primary"
-                      href={favorite.url}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(`${favorite.url}`, "_blank");
-                      }}
-                    >
-                      Buy on Amazon
-                    </Button>
-
-                    <Button onClick={() => deleteFavorite(favorite.id)}>
-                      Remove
-                    </Button>
-                  </CardBody>
-                </Card>
+                        <Button onClick={() => deleteFavorite(favorite.id)}>
+                          Remove
+                        </Button>
+                      </CardBody>
+                    </Card>
+                  </Col>
+                </Row>
               </Col>
-            </>
-          </div>
-        ))}
-      </Container>
+            </Row>
+          ))}
+        </Container>
+      </section>
+      <CardsFooter />
     </>
   );
 };
